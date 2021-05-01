@@ -1,0 +1,8 @@
+steps:
+
+# Perform Maven build
+- name: 'maven:3.6.1-jdk-11'
+  id: 'MavenBuild'
+  entrypoint: 'mvn'
+  args: ['-B', '-q', 'clean', 'install']
+  
